@@ -23,8 +23,10 @@ TOTP stands for Time-based One-Time Passwords and is a common form of two-factor
 
 Right now, the Casdoor Authenticator App is available for Android devices. You can download the app from the official GitHub repository: [Casdoor Authenticator App](https://github.com/casdoor/casdoor-app/releases/latest) and install it on your Android device.
 
-Alternatively, you can build the app from the source code available on GitHub check this for reference [Building from Source](https://github.com/casdoor/casdoor-app/releases/tag/latest).
+Alternatively, you can build the app from the source code available on GitHub check this for reference [Building from Source](https://github.com/casdoor/casdoor-app#building-from-source).
 
 ### Step 1: Enable Totp Account storage in Casdoor Server (Optional)
 
-This setup is optional for users who want to store their TOTP codes in the Casdoor server. Before using the Casdoor Authenticator App, you need to enable two-factor authentication (2FA) in the Casdoor server.
+This setup is optional for users who want to store their TOTP codes in the Casdoor server. Before using the Casdoor Authenticator App, you need to make sure that the MFA accounts setting is enabled in the Casdoor server.
+
+![Mfa account setting](/img/casdoor-authenticator-app/mfa-account-setting.png)
