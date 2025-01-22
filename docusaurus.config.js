@@ -210,9 +210,15 @@ var _hmt = _hmt || [];
       darkTheme: darkCodeTheme,
     },
     announcementBar: {
-      id: "announcement", // ID of the announcement bar
-      content:
-      "<a target=\"_blank\" rel=\"noreferrer\" href=\"https://casbin.org/\">💖 Looking for an open-source and cross-platform authorization solution that supports ACL, RBAC, ABAC? Learn more about: Casbin</a>",
+      id: "announcement",
+      content: `
+        <script>
+          document.write(Math.random() < 0.5 ? 
+            '<a target="_blank" rel="noreferrer" href="https://casbin.org/">💖 Looking for an open-source and cross-platform authorization solution that supports ACL, RBAC, ABAC? Learn more about: Casbin</a>' :
+            '<a target="_blank" rel="noreferrer" href="https://github.com/casdoor/casdoor-app">🎉 Want to quickly integrate Casdoor into your application? Try casdoor-app, a template application that demonstrates Casdoor integration!</a>'
+          );
+        </script>
+      `,
       isCloseable: true,
     },
     docs: {
